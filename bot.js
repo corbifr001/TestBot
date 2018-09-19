@@ -1,4 +1,6 @@
 const botSettings = require("./botsettings.json");
+const bottoken = require("./bottoken.json");
+
 const Discord = require("discord.js");
 const prefix = botSettings.prefix;
 
@@ -126,4 +128,4 @@ bot.on("message", async message => {
 
 
 
-bot.login(botSettings.token);
+bot.login(bottoken.token);
